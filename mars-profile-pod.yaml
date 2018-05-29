@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mars-profile-pod
+  labels:
+    name: mars-service-profile-pod
+    app: mars-service-profile
+
+spec:
+  containers:
+    - name: mars-profile-service
+      image: justinphamnz/mars.services.profile
+      ports:
+        - containerPort: 60190 
+

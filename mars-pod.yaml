@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mars-pod
+  labels:
+    name: mars-app-pod
+    app: mars-app
+
+spec:
+  containers:
+    - name: mars-web-app
+      image: justinphamnz/mars.web.app
+      ports:
+        - containerPort: 80 
+

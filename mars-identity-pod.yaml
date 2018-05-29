@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mars-identity-pod
+  labels:
+    name: mars-service-identity-pod
+    app: mars-service-identity
+
+spec:
+  containers:
+    - name: mars-identity-service
+      image: justinphamnz/mars.services.identity
+      ports:
+        - containerPort: 60968 
+

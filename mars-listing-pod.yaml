@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mars-listing-pod
+  labels:
+    name: mars-service-listing-pod
+    app: mars-service-listing
+
+spec:
+  containers:
+    - name: mars-listing-service
+      image: justinphamnz/mars.services.listing
+      ports:
+        - containerPort: 51689 
+
